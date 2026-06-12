@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Task App</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+  <div class="background-decor"></div>
+
+  <div class="app-container">
+
+    <h1 class="logo">Task App ♡</h1>
+    <p class="subtitle">Plan • Prioritize • Get it Done</p>
+
+    <form id="task-form" class="task-form">
+
+      <input
+        type="text"
+        id="task-input"
+        placeholder="What's on your mind?"
+        maxlength="100"
+      >
+
+      <button type="submit">
+        ♡ Add Task
+      </button>
+
+    </form>
+
+    <div class="filters">
+
+      <button data-filter="all">All</button>
+
+      <button data-filter="active">Active</button>
+
+      <button data-filter="completed">Completed</button>
+
+    </div>
+
+    <div class="stats">
+
+      <div class="stat-card">
+        <h3>Total</h3>
+        <span id="total-count">0</span>
+      </div>
+
+      <div class="stat-card">
+        <h3>Active</h3>
+        <span id="active-count">0</span>
+      </div>
+
+      <div class="stat-card">
+        <h3>Done</h3>
+        <span id="completed-count">0</span>
+      </div>
+
+    </div>
+
+    <ul id="task-list"></ul>
+
+  </div>
+
+  <script type="module" src="app.js"></script>
+
+</body>
+</html>
